@@ -20,3 +20,9 @@ for (sale in sales){
 console.log(`Total Sales: $${total_sales}`)
 
 
+//Task 3: While Loop
+var stock = 10
+    //Task 3: Inventory Depletion using While Loop
+while (stock > 0){
+    --stock
+    console.log(`Stock Level: ${stock}`)}
