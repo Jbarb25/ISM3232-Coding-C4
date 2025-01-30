@@ -26,3 +26,13 @@ var stock = 10
 while (stock > 0){
     --stock
     console.log(`Stock Level: ${stock}`)}
+
+
+//Task 4: Do While Loop
+var responses = 0
+
+do {
+    responses++,
+    console.log(`Custmomer Survey Responses: ${responses}`)
+} 
+    while (responses < 3)
