@@ -31,8 +31,19 @@ while (stock > 0){
 //Task 4: Do While Loop
 var responses = 0
 
+    //Task 4: Customer Survey using Do While Loop
 do {
     responses++,
     console.log(`Custmomer Survey Responses: ${responses}`)
 } 
     while (responses < 3)
+
+
+//Task 5: For In Loop
+let employee = {
+    name: "Jake",
+    position: "Manager",
+    salary: "75000"}
+    //Task 5: Employee Information using For In Loop
+for (key in employee){
+    console.log(`${key}: ${employee[key]}`)}
