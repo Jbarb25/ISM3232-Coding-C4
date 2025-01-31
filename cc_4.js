@@ -67,11 +67,9 @@ orders.forEach(orderID => {
 function calculateTax(amount, taxRate) {
     return amount * taxRate;}
 
-let amount = 250
-let taxRate = 0.30
-
-let taxAmount = calculateTax(amount, taxRate);
+let taxAmount = calculateTax(250, 0.30);
 console.log(`Tax Amount: $${taxAmount}`)
+
 
 //Task 9: Function Expressions
     //Task 9: Discount Application using Function Expression
@@ -79,7 +77,13 @@ let applyDiscount = function(price) {
     let discountRate = price* 0.10;
     return price - discountRate}
 
-let price = 140
-
-let discountedPrice = applyDiscount(price);
+let discountedPrice = applyDiscount(140);
 console.log(`Discounted price: $${discountedPrice}`)
+
+
+//Task 10: Arrow Functions
+    //Task 10: Loyalty Points using Arrow Functions 
+const calculatePoints = (purchaseAmount) =>  Math.floor(purchaseAmount / 10)
+
+//PurchaseAmount was defined in Task 1: 150.99
+console.log(`Points Earned: ${calculatePoints(purchaseAmount)}`)
