@@ -30,7 +30,6 @@ while (stock > 0){
 
 //Task 4: Do While Loop
 var responses = 0
-
     //Task 4: Customer Survey using Do While Loop
 do {
     responses++,
@@ -73,3 +72,14 @@ let taxRate = 0.30
 
 let taxAmount = calculateTax(amount, taxRate);
 console.log(`Tax Amount: $${taxAmount}`)
+
+//Task 9: Function Expressions
+    //Task 9: Discount Application using Function Expression
+let applyDiscount = function(price) {
+    let discountRate = price* 0.10;
+    return price - discountRate}
+
+let price = 140
+
+let discountedPrice = applyDiscount(price);
+console.log(`Discounted price: $${discountedPrice}`)
